@@ -17,7 +17,7 @@ def you_win(u,c):
     if (u=='r' and c=='s') or (u=='p' and c=='r') or (u=='s' and c=='p'):
         return True
 
-play()
+print(play())
             
 
 
