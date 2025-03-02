@@ -12,11 +12,11 @@ face_classifier = cv2.CascadeClassifier(
 )
 
 face = face_classifier.detectMultiScale(
-    gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(40, 40)
+    gray_image, scaleFactor=1.1, minNeighbors=5, minSize=(80, 80)
 )
 
 for (x, y, w, h) in face:
-    cv2.rectangle(img, (x, y), (x + w, y + h), (0, 255, 0), 4)
+    cv2.rectangle(img, (x, y), (x + w, y + h), (255, 0, 255, 8)
 
 img_rgb = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 
